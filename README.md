@@ -70,9 +70,7 @@ pip install git+https://github.com/RobustBench/robustbench.git
                     new_state_dict[k.replace("module.", "")] = v
                 state_dict = new_state_dict
             
-            model_test.load_state_dict(state_dict)
-
-            '
+            model_test.load_state_dict(state_dict) '
 
     * In the eval.py file we replaced 
             ' if args.dataset == 'cifar10' or args.dataset == 'cifar100':
